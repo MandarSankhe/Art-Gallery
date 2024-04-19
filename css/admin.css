@@ -1,0 +1,235 @@
+#upload {
+  margin-top: 20px;
+}
+
+#image {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+body {
+  font-family: "EB Garamond", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.upload-label {
+  display: block;
+  border: 2px dashed #c9ab81;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #f0f0f0;
+}
+
+.upload-label span {
+  font-size: 16px;
+  color: #c9ab81;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #c9ab81;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c9ab81;
+}
+
+.gallery {
+  margin-top: 20px;
+}
+
+.image {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.image h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.image p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* upload */
+.upload {
+  margin: 50px 8%;
+}
+
+.upload-sub img {
+  height: 250px;
+  transition: transform 0.5s ease;
+  width: 100%;
+  object-fit: cover;
+}
+
+.upload-sub {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(3, 1.5fr);
+  gap: 40px;
+}
+
+.reco-sections {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding-top: 50%;
+  box-sizing: border-box;
+  transition: opacity 0.5s;
+}
+
+.reco-sections:hover .overlay {
+  display: block;
+}
+
+.overlay a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-decoration: unset;
+}
+
+.overlay a:hover {
+  color: #c9ab81;
+}
+
+/* Edit Modal Popup */
+.edit-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.edit-modal-content {
+  background-color: #fefefe;
+  margin-top: 8%;
+  margin-left: 23.7%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.edit-close-h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-modal .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.edit-modal .close:hover,
+.edit-modal .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.edit-button {
+  height: 20%;
+  width: 20%;
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  font-size: 20px;
+}
+.collection-name {
+  margin: 5px 0px;
+  text-align: justify;
+}
+.edit-button i {
+  cursor: pointer;
+}
+.edit-post {
+  align-items: center;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+}
+.category,
+.artists {
+  margin: 12px 0px;
+}
+#photo-preview {
+  display: none;
+}
+
+.edit-button .fa-trash {
+  color: red;
+}

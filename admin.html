@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Gallery Admin Panel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="menucontainer" style="width: 95.88%">
+          <img
+            class="logo"
+            src="images/Logo.jpg"
+            alt="ArtGalleryLogo"
+            height="90"
+          />
+
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html">
+                <i class="fas fa-home fa-lg" aria-hidden="true"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                <i class="fa-solid fa-tag fa-lg" aria-hidden="true"></i>
+                <span>Gallery</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-circle-info fa-lg" aria-hidden="true"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin.html" class="active">
+                <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
+                <span>Admin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- header container ends here -->
+    </header>
+    <section>
+      <div class="banner-section">
+        <h2>Admin Panel</h2>
+      </div>
+    </section>
+    <div class="container">
+      <h1>Art Gallery Admin Panel</h1>
+      <form id="uploadForm">
+        <label for="photo" class="upload-label">
+          <input type="file" id="photo" accept="image/*" />
+        </label>
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="category" placeholder="Category" />
+        <input type="text" id="artists" placeholder="Artists" />
+        <textarea id="content" placeholder="Content"></textarea>
+        <button id="upload" type="submit">Create Post</button>
+      </form>
+    </div>
+
+    <div class="upload">
+      <div class="upload-sub"></div>
+    </div>
+
+    <!-- Modal Popup for Editing -->
+    <div class="edit-modal">
+      <div class="edit-modal-content">
+        <div class="edit-close-h2">
+          <h2>Edit Your Post</h2>
+          <span class="close">&times;</span>
+        </div>
+        <form id="uploadForm">
+          <label for="photo" class="upload-label">
+            <input type="file" id="photo" accept="image/*" />
+            <img id="photo-preview" src="" alt="Image Preview" />
+          </label>
+          <input type="text" id="edit-title" placeholder="Title" />
+          <input type="text" id="edit-category" placeholder="Category" />
+          <input type="text" id="edit-artists" placeholder="Artists" />
+          <textarea id="edit-content" placeholder="Content"></textarea>
+          <button id="edit-post" type="submit">Update</button>
+        </form>
+      </div>
+    </div>
+    <div class="mobilemenu">
+      <a href="index.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Home</span>
+        </div>
+      </a>
+      <a href="gallery.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Gallery</span>
+        </div>
+      </a>
+      <a href="about.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>About</span>
+        </div>
+      </a>
+      <a href="contact.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Contact Us</span>
+        </div>
+      </a>
+      <a href="#" class="active" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Admin</span>
+        </div>
+      </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

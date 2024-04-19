@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/animations.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="menucontainer">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/Logo.jpg"
+              alt="ArtGalleryLogo"
+              height="90"
+          /></a>
+
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html">
+                <i class="fas fa-home fa-lg" aria-hidden="true"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="gallery.html">
+                <i class="fa-solid fa-tag fa-lg" aria-hidden="true"></i>
+                <span>Gallery</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-circle-info fa-lg" aria-hidden="true"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="active">
+                <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
+                <span>Contact Us</span>
+              </a>
+            </li>
+            <li>
+              <a href="admin.html">
+                <i class="fa-solid fa-phone fa-lg" aria-hidden="true"></i>
+                <span>Admin</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- header container ends here -->
+    </header>
+    <section id="contactus">
+      <div class="banner-section">
+        <h2>Contact Us</h2>
+      </div>
+    </section>
+    <h1 class="contact-head">Feel free to contact</h1>
+    <form method="get" name="contact_form" id="contact_form">
+      <div class="form">
+        <div class="form-group">
+          <div class="form-data">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name*"
+              id="name"
+            />
+            <span></span>
+          </div>
+          <div class="form-data">
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email*"
+              id="email"
+            />
+            <span></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-data">
+            <input
+              type="tel"
+              name="phonenumber"
+              placeholder="Enter your phone number(999-999-9999)*"
+              id="phone"
+            />
+            <span></span>
+          </div>
+          <div class="form-data">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject*"
+              id="subject"
+            />
+            <span></span>
+          </div>
+        </div>
+        <div class="form-data">
+          <textarea
+            rows="5"
+            name="message"
+            placeholder="Enter your message here*"
+            id="message"
+          ></textarea>
+          <span></span>
+        </div>
+        <button class="gallery-btn btn" type="submit">
+          <svg height="46" width="156.812">
+            <rect height="46" width="156.812"></rect>
+          </svg>
+          <span class="btn-text">Submit</span>
+        </button>
+        <p id="success"></p>
+      </div>
+    </form>
+    <section id="faq">
+      <h1>Frequently Asked Questions</h1>
+      <div class="accordion">
+        <div>
+          <div class="acc-handle">
+            <h2>
+              When is the Museum open?<i class="fa-solid fa-angle-down"></i>
+            </h2>
+            <p>The musuem is open from 9.00am to 5.00pm daily</p>
+          </div>
+          <div class="acc-handle">
+            <h2>
+              Do I have to pay the full price for admission?<i
+                class="fa-solid fa-angle-down"
+              ></i>
+            </h2>
+            <p>
+              We offer discounts for students, seniors, and military members.
+              See our website for details.
+            </p>
+          </div>
+          <div class="acc-handle">
+            <h2>
+              How much is admission to the Museum?<i
+                class="fa-solid fa-angle-down"
+              ></i>
+            </h2>
+            <p>Tickets are $10 online, or slightly more at the door</p>
+          </div>
+        </div>
+        <div>
+          <div class="acc-handle">
+            <h2>
+              Is there a time when admission reduced?<i
+                class="fa-solid fa-angle-down"
+              ></i>
+            </h2>
+            <p>
+              We offer free admission on the tuesday from 9am to 10am. However,
+              it can get crowded during these times, so be sure to plan
+              accordingly!
+            </p>
+          </div>
+          <div class="acc-handle">
+            <h2>
+              Can anyone bypass the Admissions line?<i
+                class="fa-solid fa-angle-down"
+              ></i>
+            </h2>
+            <p>
+              Museum members often have a dedicated entrance with shorter wait
+              times.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="mobilemenu">
+      <a href="index.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Home</span>
+        </div>
+      </a>
+      <a href="gallery.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Gallery</span>
+        </div>
+      </a>
+      <a href="about.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>About</span>
+        </div>
+      </a>
+      <a href="contact.html" class="active" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Contact Us</span>
+        </div>
+      </a>
+      <a href="admin.html" style="text-decoration: none">
+        <div class="col-sm-2">
+          <span>Admin</span>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-sections">
+          <div class="column-4">
+            <div class="footer-nav">
+              <h4>Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="column-4">
+            <div class="social-links">
+              <h4>Follow Us</h4>
+              <a href="https://www.facebook.com/">
+                <img src="images/facebook-square.svg" alt="FB" height="40" />
+              </a>
+              <a href="https://twitter.com/i/flow/login">
+                <img
+                  src="images/square-x-twitter.svg"
+                  alt="Twitter"
+                  height="40"
+                />
+              </a>
+              <a href="https://www.instagram.com/">
+                <img src="images/instagram.svg" alt="Insta" height="40" />
+              </a>
+            </div>
+          </div>
+          <div class="column-4">
+            <div class="Contact Us">
+              <p>
+                <strong>Hours </strong><br />Tuesday-Friday: 7am-8:30pm<br />Saturday:
+                6am-5pm<br />Sunday: 6am-5pm
+              </p>
+              <p>Monday: <strong>CLOSED</strong></p>
+              <p>1076 King Street West<br />Toronto, Ontario<br />M5E 8Y5</p>
+              <p>
+                <strong>Phone</strong>:
+                <a href="tel:+16473637662"> 647-363-8549</a>
+              </p>
+            </div>
+          </div>
+          <div class="column-4">
+            <div class="map">
+              <h4>Find us here</h4>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23091.415734739985!2d-79.42023590111478!3d43.660089247862054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35c2d8e22427%3A0x474ce2b07f43148!2sFENTSTER%20Gallery!5e0!3m2!1sen!2sca!4v1713321301420!5m2!1sen!2sca"
+                width="100%"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
